@@ -1,0 +1,75 @@
+/*Escreva um programa que declare um inteiro, um real e um char, e ponteiros para inteiro,
+real, e char. Associe as variáveis aos ponteiros (use &). Modifique os valores de cada variável
+usando os ponteiros. Imprima os valores das variáveis antes e após a modificação.*/
+
+#include <stdlib.h>
+#include <stdio.h>
+/*
+int main (){
+    int i = 1;
+    int *pontint;
+    pontint = &i;
+
+    float f = 6.1;
+    float *pontfloat;
+    pontfloat = &f;
+
+    char c = 'm';
+    char *pontchar;
+    pontchar = &c;
+
+    *pontint = 2;
+    *pontfloat = 12.2;
+    *pontchar = 's';
+
+    printf ("Inteiro %i", *pontint);
+    printf ("\nReal %f", *pontfloat);
+    printf ("\nCaractere %c", *pontchar);
+
+return 0;
+}
+*/
+/*Escreva um programa que contenha duas variáveis inteiras. Compare seus endereços e
+exiba:
+a) o maior endereço.
+b) o conteúdo do maior endereço.
+*/
+/*
+int main (){
+    int a = 60;
+    int *ponta;
+    ponta = &a;
+
+    int b = 70;
+    int *pontb;
+    pontb = &b;
+
+    if (a > b){
+        printf("Conteudo de A igual a %d eh o maior", *ponta);
+    } else{
+    printf("Conteudo de B igual a %d eh o maior", *pontb);
+    }
+return 0;
+}
+*/
+/*Crie um programa que contenha um array de float contendo 10 elementos. Imprima o
+endereço de cada posição desse array
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int i;
+    int *p;
+	float vet[10];
+
+	printf("ELEMENTOS:\n\n");
+
+    for(i = 0; i < 10; i++){
+
+    printf("%f\n ",vet[i]);
+
+    }
+
+	return 0;
+}
