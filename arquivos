@@ -1,0 +1,39 @@
+/*Escreva um programa que:
+• crie/abra um arquivo texto de nome “caracteres.txt”
+• permita que o usuário grave diversos caracteres nesse arquivo, até que o usuário entre
+com o caractere ‘0’; e
+• feche o arquivo
+*/
+/*
+#include <stdlib.h>
+#include <stdio.h>
+
+int main (){
+    FILE *fp;
+    char frase;
+    int i;
+    int tamanho;
+    fp = fopen ("arquivo.txt", "w");
+    if (fp == NULL){
+        printf ("Erro na abertura\n");
+        system ("pause");
+        exit (1);
+    }
+
+    printf ("Digite a frase: ");
+    gets(frase);
+
+    tamanho = strlen(frase);
+
+
+    for (i=0; i<tamanho; i++){
+        fputc(frase[i], pont_arq);
+    }
+
+        if (frase = 0){
+            fclose(pont_arq);
+        }
+
+return 0;
+}
+*/
