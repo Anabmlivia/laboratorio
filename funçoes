@@ -1,0 +1,48 @@
+/*Faça uma função que receba como parâmetro um vetor X de 30 elementos inteiros e
+retorne, também por parâmetro, dois vetores A e B. O vetor A deve conter os elementos
+pares de X e o vetor B, os elementos ímpares.
+/*
+
+#include <stdio.h>
+
+int aux1, aux2 = 0;
+
+void classParImpar(int X[30], int A[30], int B[30]){
+  int i;
+
+  for (i = 0; i <= 29; i++){
+    if (X[i] % 2 == 0)
+    {
+      A[aux1] = X[i]; 
+      aux1++;
+    }
+    else
+    {
+      B[aux2] = X[i];
+      aux2++;
+    }
+  }
+
+}
+
+int main(){
+  int x[30], i, a[30], b[30];
+  for (i = 0; i <= 29; i++){
+    printf("Entre com um valor: ");
+    scanf("%d", &x[i]);
+  }
+
+  classParImpar(x, a, b);
+
+  printf("O vetor A (pares) é: \n");
+  for (i = 0; i<aux1; i++){
+      printf("%d ", a[i]);
+  }
+
+  printf("\nO vetor B (impares) é: \n");
+  for (i = 0; i<aux2; i++){
+    printf("%d ", b[i]);
+  }
+  return 0;
+}
+
